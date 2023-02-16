@@ -1,0 +1,9 @@
+# https://www.apollographql.com/docs/apollo-server/workflow/generate-types
+type GitHubRepos {
+  id: ID!
+  name: String
+}
+type Query {
+  hello: String
+  gitHubRepos: [GitHubRepos]
+}
