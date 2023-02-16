@@ -13,8 +13,14 @@ const typeDefs = readFileSync(
   "utf8"
 );
 
+const resolvers = {
+  Query: {
+    ...queries.Query,
+  },
+};
+
 const server = new ApolloServer({
-  resolvers: { ...queries },
+  resolvers,
   typeDefs,
 });
 
