@@ -29,9 +29,7 @@ const buttonTheme = {
   },
 };
 
-const button = tv({
-  ...buttonTheme,
-});
+const button = tv({ extend: buttonTheme });
 
 type ButtonProps = {
   children: React.ReactNode;
